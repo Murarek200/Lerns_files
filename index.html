@@ -139,7 +139,7 @@
             <a href="tel:+48123456789">Nr tel +48 123-456-789</a>  <!--w tej lekcji miałem dodać nr tel-->
          </p>
          <p>
-            <h2>Dział HTML Foramtowanie tekstu <br></h2>
+            <h2>Dział HTML Foramtowanie tekstu</h2><br>
             Lekcja 26 <br><br>
             <h1>Podstawy Tworzenia stron - krótko i zwięźle</h1>
                 <h2>Czym jest HTML?</h2>
@@ -196,8 +196,49 @@
             10 jest mniejsze o 50% od liczby <b><var>c</var></b> ile wynosi liczba <b><var>c</var></b> ?
         </p>
         <p>
-            Lekcja 32 <br><br>
-            
+            <h2>HTML Formularze</h2><br>
+            Lekcja 47, 48 <br><br>
+            <form action="login.php" method="post">           <!--w tej lekcji nauczyłem się co to formularz a to przykład-->
+                Login: <input type="text" name="login"><br>   <!--oraz gdzie umieścić poszczególne dane-->
+                Hasło: <input type="password" name="hasło"><br>
+                <input type="submit" value="Zaloguj się">
+            </form>
+        </p>
+        <p>
+            Lekcja 49, 50 <br><br>
+            <form action="ankieta.php">
+                <fieldset>
+                    <legend>Ile masz lat ?</legend>
+                    <input type="radio" name="kategoria_wiekowa" id="kategoria_wiekowa1" value="10-15"><label for="kategoria_wiekowa1">10-15</label><br>
+                    <input type="radio" name="kategoria_wiekowa" id="kategoria_wiekowa2" value="16-20"><label for="kategoria_wiekowa2">16-20</label><br>
+                    <input type="radio" name="kategoria_wiekowa" id="kategoria_wiekowa3" value="21-25"><label for="kategoria_wiekowa3">21-25</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Jakie są twoje skille ?</legend>
+                    <input type="checkbox" name="skille" id="html"><label for="html">html</label>
+                    <input type="checkbox" name="skille" id="css"><label for="css">css</label>
+                    <input type="checkbox" name="skille" id="js"><label for="js">js</label>
+                </fieldset>
+                <input type="submit" value="Wyślij">
+            </form>
+        </p>
+        <p>Lekcja 51 <br><br> <!--Ćwiczenie tego co poznałem--> 
+            <fieldset>
+                <Legend>Formularz kontaktowy</Legend>
+                E-mail: <input type="email" name="email" placeholder="@" required><br>
+                Imię: <input type="text" name="imie" required><br>
+                Temat: <input type="text" name="temat" required><br><br>
+                Treść: <br>
+                <textarea name="tresc" id="" cols="30" rows="10" placeholder="Jak ci możemy pomóc ?" required></textarea>
+                <br><br>
+                <input type="submit" value="Wyślij"><br><br>
+                Kiedy chcesz dostać odpowiedź ?
+                <form>
+                    <input type="radio" name="termin_odp" id="jak_najszybciej"><label for="jak_najszybciej">Jak najszybciej</label><br><br>
+                    Lub <br><br>
+                    <input type="radio" name="termin_odp" id="data_i_godz"><input type="date"><input type="time">
+                </form>
+            </fieldset>
         </p>
     </body>
 </head>
