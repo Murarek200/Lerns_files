@@ -208,21 +208,21 @@
         </p>
         <p>
             Lekcja 49, 50 <br><br>
-            <form action="ankieta.php">
-                <fieldset>
-                    <legend>Ile masz lat ?</legend>
-                    <input type="radio" name="kategoria_wiekowa" id="kategoria_wiekowa1" value="10-15"><label for="kategoria_wiekowa1">10-15</label><br>
-                    <input type="radio" name="kategoria_wiekowa" id="kategoria_wiekowa2" value="16-20"><label for="kategoria_wiekowa2">16-20</label><br>
-                    <input type="radio" name="kategoria_wiekowa" id="kategoria_wiekowa3" value="21-25"><label for="kategoria_wiekowa3">21-25</label><br>
-                </fieldset>
-                <fieldset>
-                    <legend>Jakie są twoje skille ?</legend>
-                    <input type="checkbox" name="skille" id="html"><label for="html">html</label>
-                    <input type="checkbox" name="skille" id="css"><label for="css">css</label>
-                    <input type="checkbox" name="skille" id="js"><label for="js">js</label>
-                </fieldset>
-                <input type="submit" value="Wyślij">
-            </form>
+                <form action="ankieta.php">
+                    <fieldset>
+                        <legend>Ile masz lat ?</legend>
+                        <input type="radio" name="kategoria_wiekowa" id="kategoria_wiekowa1" value="10-15"><label for="kategoria_wiekowa1">10-15</label><br>
+                        <input type="radio" name="kategoria_wiekowa" id="kategoria_wiekowa2" value="16-20"><label for="kategoria_wiekowa2">16-20</label><br>
+                        <input type="radio" name="kategoria_wiekowa" id="kategoria_wiekowa3" value="21-25"><label for="kategoria_wiekowa3">21-25</label><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Jakie są twoje skille ?</legend>
+                        <input type="checkbox" name="skille" id="html"><label for="html">html</label>
+                        <input type="checkbox" name="skille" id="css"><label for="css">css</label>
+                        <input type="checkbox" name="skille" id="js"><label for="js">js</label>
+                    </fieldset>
+                    <input type="submit" value="Wyślij">
+                </form>
         </p>
         <p>Lekcja 51 <br><br> <!--Ćwiczenie tego co poznałem--> 
             <fieldset>
@@ -294,5 +294,30 @@
             <p>Przykładowy tekst</p>
             <p>Przykładowy tekst</p>
             <p>Przykładowy tekst</p>        
+        </p>
+        <p>
+            Lekcja 59 <br><br> <!--w tej lekcjii miałem nauczyć sie co to id oraz class-y -->
+            class - w css jest oznaczany "." <br>
+            id - w css jest oznaczany "#" <br>
+            
+                <form action="ankieta.php">
+                    <div style="width: 200px;"> <!--div nauczyłem się na jakiejś stronce-->
+                        <fieldset>
+                            <legend class="pytanie">Ile masz lat ?</legend>
+                            <input type="radio" name="kategoria_wiekowa" id="kategoria_wiekowa1" value="10-15"><label for="kategoria_wiekowa1">10-15</label><br>
+                            <input type="radio" name="kategoria_wiekowa" id="kategoria_wiekowa2" value="16-20"><label for="kategoria_wiekowa2">16-20</label><br>
+                            <input type="radio" name="kategoria_wiekowa" id="kategoria_wiekowa3" value="21-25"><label for="kategoria_wiekowa3">21-25</label><br>
+                        </fieldset>
+                    </div>
+                    <div style="width: 260px;">
+                        <fieldset>
+                            <legend class="pytanie">Jakie są twoje skille ?</legend>
+                            <input type="checkbox" name="skille" id="html"><label for="html">html</label>
+                            <input type="checkbox" name="skille" id="css"><label for="css">css</label>
+                            <input type="checkbox" name="skille" id="js"><label for="js">js</label>
+                        </fieldset>
+                    </div>    
+                    <input type="submit" value="Wyślij">
+                </form>
         </p>
     </body>

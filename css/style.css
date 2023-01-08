@@ -4,3 +4,9 @@ p
     font-size: 25px;
     color: rgb(220, 220, 223);
 }
+.pytanie
+{
+    font-size: 25px;
+    font-style: oblique;
+    color: darkgreen;
+}
