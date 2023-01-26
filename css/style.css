@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(156, 156, 156);
+}
 .pytanie {
     font-size: 25px;
     font-style: oblique;
@@ -166,4 +169,33 @@ caption{
 }
 .cyferki{
     text-align: center;
+}
+#kurtyna .blog{
+    background-color: rgb(120, 120, 120);
+    width: 500px;
+    padding: 15px;
+    box-shadow: 0 0 20px 10px rgb(84, 84, 84);
+    border-radius: 20px;
+}
+.guzik1{
+    background-color: #22722e;
+    border: none;
+    color: white;
+    padding: 15px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15%;
+    margin-left: 83%;
+}
+.guzik2{
+    background-color: #22722e;
+    border: none;
+    color: white;
+    padding: 15px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15%;
+    margin-left: 85%;
 }

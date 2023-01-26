@@ -7,9 +7,9 @@
         <meta charset="UTF-8"> 
         <meta name="description" content="To jest strona w które podsumowywuje moje pierwsze lekcje">
         <meta author="Kacepr Kucharczyk"> 
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body style="background-color: rgb(125, 125, 125);">
+<body>
     <a>name="top"></a>
     <p>
     Lekcja 1 <br><br>
@@ -602,6 +602,49 @@
         </footer>
     </p>
     <p>
-        Lekcja 28 <br><br>
+        Lekcja 28 <br><br> <!-- Ćwiczenie tworzenia formularzy -->
+        <div class="blog" id="kurtyna">
+            <form action="new_article.php" method="post" class="blog">
+                <div class="newss">
+                    <label for="title">Tytuł artykułu:</label>
+                    <input type="text" id="title" name="title">
+                </div>
+                <p>
+                    <label for="content">Treść artykułu:</label>
+                    <textarea name="content" id="content" cols="50" rows="4"></textarea>
+                </p>
+                <p>
+                    <label for="publication-date">Data publikacji:</label>
+                    <input type="datetime-local" name="publication-date" id="publication-date">
+                </p>
+                <p>
+                    Typ publikacji:
+                    <input type="radio" name="type" id="news" value="news">
+                    <label for="news">News</label>
+                    <input type="radio" name="type" id="article" value="article">
+                    <label for="article">Artykuł</label>
+                    <input type="radio" name="type" id="review" value="review">
+                    <label for="review">Recenzja</label>
+                </p>
+                <p>
+                    Tagi:
+                    <input type="checkbox" name="tag" id="journey" value="journey">
+                    <label for="journey">Podróże</label>
+                    <input type="checkbox" name="tag" id="lifestyle" value="lifestyle">
+                    <label for="lifestyle">Lifestyle</label>
+                </p>
+                <p>
+                    <label for="category">Kategoria:</label>
+                    <select name="category" id="category">
+                        <option value="category1">Kategoria 1</option>
+                        <option value="category2">Kategoria 2</option>
+                    </select>
+                </p>
+                <p>
+                    <button type="reset" class="guzik1">Resetuj</button>
+                    <button type="submit" class="guzik2">Wyślij</button>
+                </p>
+            </form>
+        </div>
     </p>
 </body>                
