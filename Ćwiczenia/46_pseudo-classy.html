@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo klasa</title>
+    <style>
+        .send{
+            width: 100px;
+            background: red;
+            border: 3px solid black;
+            outline: none;
+            cursor: pointer;
+        }
+        .send:active{
+            font-weight: bold;
+        }
+        .send:hover{
+            background: orange;
+        }
+        .send:focus{
+            border: 3px solid coral;
+        }
+        .send:disabled{
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+    Jaki jest twój najlepszy skill ?
+    <button class="send">Python</button>
+    <button class="send">Html</button>
+    <button class="send">Css</button>
+    <button class="send" disabled>Js</button>
+    
+
+
+</body>
+</html>
