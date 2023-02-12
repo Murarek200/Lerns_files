@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album jpg</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image-box{
+         margin: 10px;
+         padding: 5px;
+         background-color: black;
+         color: white;
+         border-radius: 5px;
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: center;   
+        }
+        .image-box:hover{
+            transform: scale(1.15);
+            transition: all 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2023/02/06/00/21/scooter-7770871__340.png" alt="">
+            <div>Opis fotki</div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2021/10/01/18/53/corgi-6673343__340.jpg" alt="">
+            <div>Opis fotki</div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2023/02/04/20/37/building-7768129__340.jpg" alt="">
+            <div>Opis fotki</div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2023/01/21/02/40/cat-7732877__340.jpg" alt="">
+            <div>Opis fotki</div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2022/10/10/12/22/motorcycle-7511707__340.jpg" alt="">
+            <div>Opis fotki</div>
+        </div>
+    </div>
+</body>
+</html>
