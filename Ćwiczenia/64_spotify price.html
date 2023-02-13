@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cennik hostingu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color:rgb(28, 28, 28);
+        }
+        .title{
+            text-align: center;
+            color: #C0C0C0;
+        }
+        .main{
+            font-weight: bold;
+            font-size: 4rem;
+            padding-top: 5rem;
+        }
+        .middle{
+            font-size: 1.7rem;
+            padding-bottom: 2rem;
+        }
+        .offer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .plan{
+            padding: 2.5rem;
+            margin: 12px;
+            color: #C0C0C0;
+            background-color: #252626;
+            border-radius: 10px;
+            text-align: center;
+            overflow: hidden; 
+        }
+        .plan h2{
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        .plan .price-user{
+            margin-bottom: 3rem;
+            font-size: 1.7rem;
+        }
+        .plan .price-user{
+            border-bottom: 1px solid #C0C0C0;
+            padding-bottom: 0.5em;
+        }
+        .plan ul.details{
+            list-style-type: none;
+            text-align: left;
+        }
+        .plan ul.details li{
+            margin: 8px;
+        }
+        .plan .fa{
+            margin-right: 4px;
+        }
+        .plan li .fa-check{
+            color: #6ab04c;
+        }
+        .plan a {
+            display: block;
+            margin-top: 1.5rem;
+            padding: 11px 32px;
+            color: white;
+            background-color: #3e672D;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            
+        }
+        .plan.top{
+            border: 2px solid #6ab04c;
+        }
+        .listing-badges{
+            position: relative;
+        }
+        .plan.top span{
+            padding: 4px;
+            position: absolute;
+            left: -74px;
+            top: -20px;
+            width: 175px;
+            transform: rotate(-35deg);
+            background-color: #6ab04c;
+            color: white;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="title main">Wybierz premium dla siebie</div>
+    <div class="title middle">Słuchaj bez ograniczeń na telefonie, głośniku i innych urządzeniach.</div>
+    <div class="offer">
+        <div class="plan">
+            <h2>Individual</h2>
+            <div class="price-user">
+                <p>19.99 zł</p>
+                <p>1 konto</p>
+            </div>
+            <ul class="details">
+                <li><i class="fa fa-check" aria-hidden="true"></i>Słuchaj muzyki bez reklam</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Odtwarzaj, gdzie tylko chcesz - również w trybie offline</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Odtwarzanie na żądanie</li>
+            </ul>
+            <a href="#">Rozpocznij</a>
+        </div>
+
+        <div class="plan">
+            <h2>Duo</h2>
+            <div class="price-user">
+                <p>24.99 zł</p> 
+                <p>2 konto</p>
+            </div>
+            <ul class="details">
+                <li><i class="fa fa-check" aria-hidden="true"></i>2 konta Premium dla pary mieszkającej pod tym samym adresem</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Muzyka bez reklam, tryb offline, odtwarzanie na żądanie</li>
+            </ul>
+            <a href="#">Rozpocznij</a>
+        </div>
+
+        <div class="plan top">
+            <div class="listing-badges">
+                <span>Bestseller</span>
+            </div>
+            <h2>Family</h2>
+            <div class="price-user">
+                <p>29.99 zł</p>
+                <p>6 konto</p>
+            </div>
+            <ul class="details">
+                <li><i class="fa fa-check" aria-hidden="true"></i>6 kont Premium dla członków rodziny mieszkających pod tym samym adresem</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Blokowanie treści nieprzyzwoitych</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Muzyka bez reklam, tryb offline, odtwarzanie na żądanie</li>
+            </ul>
+            <a href="#">Rozpocznij</a>
+        </div>
+
+        <div class="plan">
+            <h2>Student</h2>
+            <div class="price-user">
+                <p>9.99 zł</p>
+                <p>1 konto</p>
+            </div>
+            <ul class="details">
+                <li><i class="fa fa-check" aria-hidden="true"></i>Specjalna zniżka dla studentów zatwierdzonych uczelni</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Słuchaj muzyki bez reklam</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Odtwarzaj, gdzie tylko chcesz - również w trybie offline</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i>Odtwarzanie na żądanie</li>
+            </ul>
+            <a href="#">Rozpocznij</a>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
