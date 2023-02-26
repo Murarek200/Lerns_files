@@ -126,7 +126,7 @@ caption{
     opacity: 1;
 }
 #komunikat{
-/*  
+    /*  
     width: 300px;
     text-align: center;
     padding: 30px;
@@ -137,7 +137,7 @@ caption{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-*/
+    */
 }
 [definicja]:hover::after{
     content: attr(definicja);
