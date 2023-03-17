@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        .header {
+            border: 2px solid red;
+        }
+        .right {
+            float: right;
+            margin: 5px;
+        }
+        span {
+            float: left;
+            background-color: lightblue;
+            padding: 5px;
+            margin: 5px;
+        }
+        .clearfix::after {
+            content: " ";
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        article, aside {
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .left-column{
+            width: 75%;
+            height: 300px;
+            float: left;
+            background-color: lightgreen;
+        }
+        .sidebar{
+            width: 25%;
+            height: 300px;
+            float: left;
+            background-color: lightgray;
+        }
+        .page{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header class="header clearfix">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            <img class="right" src="https://cdn.pixabay.com/photo/2017/05/08/17/11/pontiac-2295904_960_720.jpg" alt="Auto" width="100"> Quos,
+            labore excepturi tenetur ullam molestiae iusto nam similique vero perferendis magni, culpa hic? Iusto facere, eveniet debitis quidem ipsam voluptatibus minus quos culpa, ipsa ducimus accusantium dolor et eligendi voluptatum sequi fuga libero voluptas quod, totam placeat? Quae earum quis nihil!
+            <span>Lorem ipsum dolor sit amet.1 </span>
+            <span>Lorem ipsum dolor sit amet.2 </span>
+            <span>Lorem ipsum dolor sit amet.3 </span>
+            <span>Lorem ipsum dolor sit amet.4 </span>
+        </header>
+        <article class="left-column">
+            article
+        </article>
+        <aside class="sidebar">
+            aside
+        </aside>
+    </div>
+</body>
+</html>

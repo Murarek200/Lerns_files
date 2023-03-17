@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Static Relative</title>
+    <style>
+        p{
+            position: static;
+            left: 100px;  /* Ignorowane, jeśli by było position relative nie zostało to by z ignorowane :) */
+        }
+        .box{
+            position: relative;
+            bottom: 75px;
+            left: 50px;
+            width: 200px;
+            height: 100px;
+            background: lightblue;
+            border: 2px solid black;
+            z-index: 2;
+        }
+        .box2{
+            background-color: green;
+            left: 15%;
+            bottom: 150px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ducimus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ducimus.</p>
+    <div class="box"> 1234567890 1234567890 </div>
+    <div class="box box2"> 1234567890 1234567890 </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, repellat?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, repellat?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, repellat?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, repellat?</p>
+</body>
+</html>
