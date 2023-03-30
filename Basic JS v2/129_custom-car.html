@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zagnieżdzanie obektów</title>
+</head>
+<body>
+    
+    <script>
+
+        function makeCar (model, color, topSpeed) {
+            return {
+                model: model,
+                color: color,
+                topSpeed: topSpeed,
+                manufactures: {
+                    name: "Dodge",
+                    country: "USA"
+                }
+            }
+        }
+
+        let model1 = makeCar ("Viper", "blue", "290");
+        console.log(model1);
+
+        console.log(makeCar("Ram", "red", "240"));
+
+    </script>
+
+</body>
+</html>
