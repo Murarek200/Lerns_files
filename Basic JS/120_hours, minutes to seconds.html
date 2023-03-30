@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Czas, funkcje</title>
+</head>
+<body>
+    
+    <script>       
+    
+        function convertToSeconds (hours, minutes) {
+            return minutes * 60 + (hours * 60 * 60);
+        }
+
+        let convert = convertToSeconds (3, 25);
+        console.log("3h. i 25min. wynoszą: " + convert + " sekund");
+
+
+
+        function convertToHours (minutes1) {
+            return minutes1 / 60;
+        }
+
+        let result = convertToHours (120);
+        console.log("120 minut to: " + result + " godziny.");
+        
+    
+    </script>
+</body>
+</html>

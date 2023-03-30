@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkcje</title>
+</head>
+<body>
+    
+    <script>
+
+        function multiply(a, b, c){
+            let result = a * b * c;
+            return result;
+        }
+
+        let multiplyResult = multiply(2 ,3, 10);
+        console.log(multiplyResult); //60
+
+        let multiplyResult2 = multiply(4, 2, 12);
+        console.log(multiplyResult2) //96
+
+
+        function substract(a, b){
+            let result = a - b;
+            return result;
+        }
+
+        let substractResult = substract(7, 2);
+        console.log(substractResult); //5
+
+        function getSomeNumber(){
+            return 79;
+        }
+
+        console.log(getSomeNumber()); //79
+
+        let money = 1000;
+        let interestRate = 0.05;
+
+        function calculateInvestmentResult(money, interestRate){
+            return money + (money * interestRate);
+        }
+
+        let investmentResult = calculateInvestmentResult(money, interestRate);
+        console.log(investmentResult); //1050pln
+
+        console.log(calculateInvestmentResult(2200, 0.045) ); //2299pln
+
+
+
+    </script>
+</body>
+</html>

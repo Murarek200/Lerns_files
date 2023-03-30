@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperaturka</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function cToF (celsius) {
+            return celsius * 9 / 5 + 32;
+        }
+        let result = cToF (20);
+        console.log("20 stopni Celsjusza to: " + result + " Fahrenheita");
+
+        
+        function fToC (fahrenheit) {
+            return (fahrenheit - 32) * 5 / 9; 
+        }
+        let result2 = fToC (86);          // \xB0 to znaczek celsjusza
+        console.log("86\xB0 Fahrenheit to: " + result2 + "\xB0 Celsjusza");
+
+    </script>
+</body>
+</html>
