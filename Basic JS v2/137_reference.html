@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referencje</title>
+</head>
+<body>
+    
+    <script>
+
+        let company = {
+            name: "Example Ltd",
+            street: "Wilcza",
+            city: "Wwa",
+            employees: []
+        }
+
+        function addEmployee(name, email, job) {
+            const employee = {
+                username: name,
+                email: email,
+                job: job
+            };
+
+            company.employees.push(employee);
+        };
+
+        addEmployee("Asia", "asia@example.com", "admin");
+        addEmployee("Kasia", "kasia@example.com", "programmer");
+        addEmployee("Basia", "basia@example.com", "tester");
+
+        console.log(company);
+
+    </script>
+
+</body>
+</html>

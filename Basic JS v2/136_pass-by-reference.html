@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przekazywanie danych do funcji przez referencje</title>
+</head>
+<body>
+    
+    <script>
+
+        let employee = {
+            name: "Kacper",
+            email: "example@gamil.com",
+            rank: "programmer",
+            salary: 8000
+        };
+
+        function promoteToManager (user) {
+            if (user.rank == "manager") {
+                console.log("Pracownik jest już managerem.");
+                return;
+            } 
+            
+            user.rank = "manager";
+            let salary = user.salary;
+            user.salary = salary + (salary * 0.5);
+        };
+
+        promoteToManager(employee);
+        console.log(employee);
+
+    </script>
+
+</body>
+</html>
