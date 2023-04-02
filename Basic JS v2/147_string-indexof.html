@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indexof</title>
+</head>
+<body>
+    
+    <script>
+
+        function validateEmail(email) {
+            let monkeyIndex = email.indexOf("@");
+            if (monkeyIndex < 0) return false;
+
+            let dotIndex = email.indexOf(".", monkeyIndex); //asia.kowalska@gmail.com  wyszuka kropki po znaku @ 
+            if (dotIndex == -1) return false;
+
+           /* if (dotIndex < monkeyIndex) {
+                return false;  //np -1
+            };
+
+            return true;  */
+        }
+
+        const email1 = "asia@example.com";
+        console.log(email1, validateEmail(email1) );
+
+        const email2 = "karol@domena";
+        console.log(email2, validateEmail(email2) );
+
+        const email3 = "user.com";
+        console.log(email3, validateEmail(email3) );
+
+    </script>
+
+</body>
+</html>
