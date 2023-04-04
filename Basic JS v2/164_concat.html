@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Łączenie tablic</title>
+</head>
+<body>
+    
+    <script>
+
+        function createSchoolGroup(groupLetter, numGroups) {
+            let arr = [];
+
+            for (let i = 1; i <= numGroups; i++) {
+                arr.push(i + groupLetter);
+            }
+
+            return arr;
+
+        }
+
+        let group1 = createSchoolGroup("a", 3);
+        let group2 = createSchoolGroup("b", 6);
+        let group3 = createSchoolGroup("c", 8);
+        
+        let schoolGroups = group1.concat(group2).concat(group3);
+       console.log(schoolGroups);
+
+    </script>
+
+</body>
+</html>

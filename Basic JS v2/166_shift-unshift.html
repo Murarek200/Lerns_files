@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shift i unshift</title>
+</head>
+<body>
+    
+    <script>
+
+        const cars = ["Dodge", "Chevy", "GMC", "Pontiac", "Acura", "Toyota"];
+
+        console.log("Sprzedany", cars.shift());
+        console.log("Sprzedany", cars.shift());
+        console.log("Sprzedany", cars.shift());
+
+        cars.push("nissan");
+        cars.push("audi");
+        cars.push("merc");
+
+        cars.unshift("GMC");
+
+        console.log(cars);
+
+    </script>
+
+</body>
+</html>

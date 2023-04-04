@@ -10,7 +10,20 @@
     
     <script>
 
-        
+        function clenaText(text) {
+            text = text.replace(/php/gi, "***"); 
+            text = text.replace(/html/gi, "****"); 
+            text = text.replace(/css/gi, "*".repeat(3)); 
+            text = text.replace(/JavaScript/gi, "**********"); 
+
+            return text;
+            
+        }
+
+        const content = `Programowanie zacząłem z językiem php, następnie poznałem: html i css, ale obecnie skupiam się na JavaScript`;
+
+        let newContent = clenaText(content);
+        console.log(newContent);
 
     </script>
 

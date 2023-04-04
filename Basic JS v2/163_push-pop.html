@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push i pop</title>
+</head>
+<body>
+    
+    <script>
+
+        function generateNumArray(arrLenght) {
+            let arr = [];
+            
+            for (let i = 0; i < arrLenght; i++) {
+                arr.push(i);
+            }
+
+            return arr;
+
+        }
+
+        const numArr = generateNumArray(12);
+        console.log(numArr);
+
+        console.log(numArr.pop());
+        console.log(numArr.pop());
+        console.log(numArr.pop());
+
+        console.log(numArr);
+
+    </script>
+
+</body>
+</html>
