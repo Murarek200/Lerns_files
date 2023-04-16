@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fabryka furek</title>
+</head>
+<body>
+    
+    <script>
+
+        let soldCars = 1200; //sprzedane auta
+        let carPrice = 90000; //cena 1szt auta
+
+        var revenue = soldCars * carPrice; //przychody
+        console.log("Przychody wynoszą: " + revenue + " pln");
+
+        let factoryCosts = revenue * 0.65;
+        console.log("Zarobek fabryki to: " + factoryCosts);
+
+        let marketingCosts = revenue * 0.1;
+        console.log("Koszty marketingu wynoszą: " + marketingCosts);
+
+        var income = ((revenue - factoryCosts) - marketingCosts);
+        console.log("Przychody fabryki: " + income);
+
+        var incomeTax = income * 0.19;
+        console.log("Podatek od dochodu: " + incomeTax);
+
+        var incomeAfterTax = income - incomeTax;
+        console.log("Zysk firmy wynosi: " + incomeAfterTax);
+
+        var action = incomeAfterTax / 30000;
+        console.log("Zysk jednej akcji to: " + action);
+
+    </script>
+
+</body>
+</html>
