@@ -48,7 +48,40 @@
 
         console.log(calculateInvestmentResult(2200, 0.045) ); //2299pln
 
+        // Function Expression
 
+        let add10 = function (num) {
+            return num + 10;
+        };
+
+        console.log(add10(15)); // 25 w konsoli
+
+        add10 = function (num) {
+            let sum = num + 10;
+            console.log(sum);
+            return sum; 
+        };
+
+        const sum = add10(20);
+       console.log(sum);
+
+       function downloadFile(fileName, onComplete, onError) {
+            if (fileName.length > 5) {
+                onComplete("success");
+            } else {
+                onError("Error!");
+            }
+        }
+
+
+        downloadFile("fileName123.txt",
+                function (str) {
+                    console.log("OnComplete:", str)
+                },
+                function (str) {
+                    console.log("Error:", str);
+                }
+            );
 
     </script>
 </body>

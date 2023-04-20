@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+         let article = {
+            title: "Hello World",
+            content: "To mój pierwszy artykuł",
+            tags: ["blog", "lifestyle"],
+            version: 1
+         }
+
+         function validateArticle(art) {
+            if ("title" in art == false || typeof art.title !== "string") {
+                console.log("Nieprawidłowy title w article");
+                return false;
+            }
+
+            if ("content" in art == false || typeof art.content !== "string") {
+                console.log("Nieprawidłowy content w article");
+                return false;
+            }
+
+            if (! "tags" in art || !Array.isArray(art.tags)) {
+                console.log("Nieprawidłowy tags w article");
+                return false;
+            }
+
+            if (! "version" in art || typeof art.version !== "number") {
+                console.log("Nieprawidłowa versja w article");
+                return false;
+            }
+            
+            if (art.version <= 0) {
+                console.log("Zła wersja artykułu");
+                return false;
+            }
+
+            return true;
+         }
+
+         console.log(validateArticle(article));
+
+
+         
+
+    </script>
+
+</body>
+</html>
